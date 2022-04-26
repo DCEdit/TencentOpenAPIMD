@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TencentOpenAPI-MD"
-  spec.version      = "3.5.12"
+  spec.version      = "3.5.11"
   spec.summary      = "TencentOpenAPI why not pod"
 
   # This description is used to generate tags and improve search results.
