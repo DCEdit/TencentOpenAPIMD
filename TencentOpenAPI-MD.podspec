@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TencentOpenAPI-MD"
   spec.version      = "3.5.11"
-  spec.summary      = "A short description of TencentOpenAPI-MD."
+  spec.summary      = "TencentOpenAPI why not pod"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-  spec.frameworks             = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+  spec.frameworks             = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
   spec.libraries              = 'iconv', 'sqlite3', 'stdc++', 'z'
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
