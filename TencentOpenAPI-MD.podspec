@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                           TencentOpenAPI  ----- 腾讯开发平台pod集成
                    DESC
 
-  spec.homepage     = "https://github.com/DCEdit/TencentOpenAPI-MD"
+  spec.homepage     = "https://github.com/DCEdit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/DCEdit/TencentOpenAPI-MD.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/DCEdit/TencentOpenAPI-MD.git", :tag => "3.5.11" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -135,9 +135,10 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.ios.deployment_target = '9.0'
   spec.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.modo.TencentOpenAPI' }
-  spec.pod_target_xcconfig = {
-    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
-  }
+  # spec.pod_target_xcconfig = {
+  #   'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
+  # }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
   # spec.compiler_flags = [
 
