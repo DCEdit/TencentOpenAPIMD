@@ -135,6 +135,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
   spec.ios.deployment_target = '9.0'
   spec.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.modo.TencentOpenAPI' }
+  spec.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
   spec.requires_arc           = true
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
