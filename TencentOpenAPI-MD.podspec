@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TencentOpenAPI-MD"
   spec.version      = "3.5.11"
-  spec.summary      = "TencentOpenAPI why not pod"
+  spec.summary      = "TencentOpenAPI ----- 腾讯开发平台pod集成"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC 
-                          TencentOpenAPI 集成
+                          TencentOpenAPI  ----- 腾讯开发平台pod集成
                    DESC
 
   spec.homepage     = "https://github.com/DCEdit/TencentOpenAPI-MD"
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = 'MIT'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -132,12 +132,16 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
   spec.ios.deployment_target = '9.0'
   spec.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.modo.TencentOpenAPI' }
-  spec.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  spec.pod_target_xcconfig = {
+    'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
+  }
 
-  spec.requires_arc           = true
+  # spec.compiler_flags = [
+
+  # ]
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
